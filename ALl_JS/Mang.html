@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .khoi1 {
+            display: flex;
+        }
+
+        .image {
+            padding-right: 4pt;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="mtn">
+
+
+    </div>
+
+
+
+
+    <script>
+        var mangdl = [
+            {
+                image: " https://kenh14cdn.com/thumb_w/250/2020/4/30/untitled-1-15882312643892049796321-crop-15882312698391220060164.png",
+                name: "Phan Van Duc",
+                content: "Phì cười với cách Phan Văn Đức &quot;dìm hàng&quot; vợ, Quỳnh Anh tranh thủ đi du lịch xả hơi ngày nghỉ lễ"
+            },
+            {
+                image: "https://kenh14cdn.com/thumb_w/250/2020/4/30/ak-1588219242669983823834-crop-15882192475421069596479.jpg",
+                name: "No info",
+                content: "Mải sính ngoại, nhiều tín đồ làm đẹp không biết Việt Nam cũng có kem đặc trị &quot;đánh bay&quot; mụn sưng viêm, giá chỉ vài chục nghìn"
+
+            }
+
+        ];
+
+        for (var i = 0; i < mangdl.length; i++) {
+            var noidungkhoi =
+                `     <div class="khoi1">
+            <div class="image">
+
+                <img src="${mangdl[i].image}
+          "/>
+
+
+            </div>
+
+            <div class="main-content">
+                <div class="name">
+               ${mangdl[i].name}
+                </div>
+                <div class="sub-content">
+                    ${mangdl[i].content}
+                </div>
+
+            </div>
+
+
+
+        </div>`;
+
+            console.log(noidungkhoi);
+
+            document.getElementById("mtn").innerHTML = noidungkhoi;
+
+        }
+     
+
+
+
+
+    </script>
+</body>
+</html>

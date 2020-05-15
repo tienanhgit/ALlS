@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <h2>Finding HTML Elements by Tag Name</h2>
+
+    <p>Hello World!</p>
+    <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+    <p class="bank">???</p>
+    <p id="demo"> </p>
+    <img id="image"/>
+
+    <script>
+        var x = document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML =
+            'The text in first paragraph (index 0) is: ' + x[1].innerHTML;
+
+        var p = document.getElementsByClassName("bank");
+        p[0].innerHTML = "Da change";
+
+        document.getElementById("image").src = "https://kenh14cdn.com/thumb_w/250/2020/4/30/untitled-1-15882312643892049796321-crop-15882312698391220060164.png";
+        document.getElementById("demo").style.color = "blue";
+    </script>
+
+
+
+</body >
+</html >

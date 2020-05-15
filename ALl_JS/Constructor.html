@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+    <script>
+        function MonAn(name, price, rating,dundle) {
+            this.name = name;
+            this.price = price;
+            this.rating = rating;
+            this.dundle = dundle;
+
+        }
+
+   
+        MonAn.prototype.SayInfo = function () { console.log("Mon an co ten :" + this.name); };
+        var PhaLau = new MonAn("Phá Lấu", 200000, 5);
+        var BBQ = new MonAn("Món nướng BBQ", 250000, 4);
+
+     
+        //console.log(MonAn.prototype);
+        //console.log(PhaLau.__proto__);
+        //console.log(BBQ);
+        //console.log(PhaLau)
+
+
+
+        
+
+
+
+
+    </script>
+
+
+</body>
+</html>
