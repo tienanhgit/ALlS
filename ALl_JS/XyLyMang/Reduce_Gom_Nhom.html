@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="../Lib/Underscore/underscore/underscore.js"></script>
+    <title></title>
+</head>
+<body>
+    <!--<h1>Phương thức gom nhóm trong JS</h1>
+         arr.reduce(callback( accumulator, currentValue[, index[, array]] ) {
+      // return result from executing something for accumulator or currentValue
+    }[, initialValue])
+    Tham số :
+        accumulator biến tích lũy, được trả về sau mỗi lần gọi hàm callback.
+       currentValue phần tử của mảng đang được xử lý.
+        index (Optional) chỉ số của phần tử trong mảng đang được xử lý.
+        array (Optional) mảng hiện tại gọi hàm reduce().
+        -->
+
+    <button onclick="click();">A</button>
+
+
+</body>
+
+<script>
+    //1.begin
+    //const data = [5, 10, 15, 20, 25];
+    //const res = data.reduce((total, currentValue) => {
+    //    return total + currentValue;
+    //});
+    //console.log(res);
+    //2. Cách hoạt động
+    var data = [2, 3, 4, 6, 8, 10];
+    const reducer = (accumulator, currentValue, currentIndex, array) => accumulator + currentValue;
+
+
+    var result = data.reduce((accumulator, currentValue, currentIndex, array) => accumulator + currentValue);
+    console.log(result);
+
+
+
+</script>
+</html>
