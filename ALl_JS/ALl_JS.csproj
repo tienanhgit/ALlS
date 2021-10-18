@@ -67,13 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bien.html" />
-    <Content Include="Constructor.html" />
-    <Content Include="Function\FunctionConstructor.html" />
-    <Content Include="Function\FunctionExpressions.html" />
-    <Content Include="Function\FunctionHoisting.html" />
-    <Content Include="Function\FuntionDeclaration.html" />
-    <Content Include="JS DOM\DOM Document.html" />
+    <Content Include="JSTutorial\Bien.html" />
+    <Content Include="JSTutorial\Constructor.html" />
+    <Content Include="JSTutorial\Function\ArrowFunction.html" />
+    <Content Include="JSTutorial\Function\FunctionCall.html" />
+    <Content Include="JSTutorial\Function\FunctionConstructor.html" />
+    <Content Include="JSTutorial\Function\FunctionExpressions.html" />
+    <Content Include="JSTutorial\Function\FunctionHoisting.html" />
+    <Content Include="JSTutorial\Function\FunctionObject.html" />
+    <Content Include="JSTutorial\Function\FunctionsObject.html" />
+    <Content Include="JSTutorial\Function\FuntionDeclaration.html" />
+    <Content Include="JSTutorial\JS DOM\DOM Document.html" />
+    <Content Include="JSTutorial\ThisKeyword.html" />
     <Content Include="Library\bootstrap-3.1.1-dist\css\bootstrap-theme.css" />
     <Content Include="Library\bootstrap-3.1.1-dist\css\bootstrap-theme.min.css" />
     <Content Include="Library\bootstrap-3.1.1-dist\css\bootstrap.css" />
@@ -438,12 +443,12 @@
     <Content Include="Lib\Underscore\underscore\underscore-umd-min.js" />
     <Content Include="Lib\Underscore\underscore\underscore-umd.js" />
     <Content Include="Lib\Underscore\underscore\underscore.js" />
-    <Content Include="Mang.html" />
-    <Content Include="Object.html" />
-    <Content Include="UseTrick.html" />
-    <Content Include="Vonglap.html" />
+    <Content Include="JSTutorial\Mang.html" />
+    <Content Include="JSTutorial\Object.html" />
+    <Content Include="JSTutorial\UseTrick.html" />
+    <Content Include="JSTutorial\Vonglap.html" />
     <Content Include="Web.config" />
-    <Content Include="XyLyMang\Reduce_Gom_Nhom.html" />
+    <Content Include="JSTutorial\XyLyMang\Reduce_Gom_Nhom.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -501,7 +506,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="XuLyJson\" />
+    <Folder Include="JSTutorial\XuLyJson\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    //The JS this keyword refer to the object it belongs to
+    /*
+     It has difirent values depending on where it is used
+     - In a method, this refers to the owner object
+     - Alone, this refers to the global object
+     - In a function, this refers the global object
+     - In a event, this refers to the element that recevied the event
+     - Method like call(), and apply() can refer this to any object
+
+     */
+    // This in Method
+    // In a object method , this refer to the "owner" od the method
+    //const person = {
+    //    firtsName: "John",
+    //    lastName: "Doe",
+    //    fullName: function () {
+    //        return this.firtsName + " " + this.lastName ;
+    //    }
+
+    //}
+    // This Alone
+    //let x = this.person;
+    // This in Function defalt
+    //function myFunction() {
+    //    var x = 5;
+    //    return x;
+    //}
+    //myFunction();
+    //
+    // This in Event Handlers
+    const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        myFunction: function () {
+            return this.firstName;
+        }
+    };
+    console.log(person.myFunction());
+
+</script>
+</html>

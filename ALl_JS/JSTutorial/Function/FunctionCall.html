@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    //The call() method is predefined in Javascript
+    const person = {
+        fullName: function () {
+            return this.firstName + " "+this.lastName;
+        }
+    };
+    function subPerson() {
+        return this.firstName + " " + this.lastName;
+
+    }
+
+    const person1 = {
+        firstName: "John",
+        lastName:"Wick"
+    }
+    console.log(subPerson.call(person1));
+
+
+</script>
+</html>
