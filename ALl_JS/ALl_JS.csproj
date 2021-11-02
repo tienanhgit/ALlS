@@ -86,6 +86,7 @@
     <Content Include="Library\bootstrap-3.1.1-dist\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Library\bootstrap-3.1.1-dist\js\bootstrap.js" />
     <Content Include="Library\bootstrap-3.1.1-dist\js\bootstrap.min.js" />
+    <Content Include="Library\Jquery\jquery-3.6.0.min.js" />
     <Content Include="Lib\Underscore\underscore\docs\docco.css" />
     <Content Include="Lib\Underscore\underscore\docs\favicon.ico" />
     <Content Include="Lib\Underscore\underscore\docs\images\background.png" />

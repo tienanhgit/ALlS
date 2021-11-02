@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <script src="../Library/Jquery/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
+    <button></button>
 </body>
 <script>
     //The JS this keyword refer to the object it belongs to
@@ -38,15 +39,98 @@
     //myFunction();
     //
     // This in Event Handlers
-    const person = {
-        firstName: "John",
-        lastName: "Doe",
-        id: 5566,
-        myFunction: function () {
-            return this.firstName;
+    //const person = {
+    //    firstName: "John",
+    //    lastName: "Doe",
+    //    id: 5566,
+    //    myFunction: function () {
+    //        return this.firstName;
+    //    }
+    //};
+    //console.log(person.myFunction());
+   // This sẽ lấy giá trị của đối tượng trỏ đến nó , ở đây là person, nếu k có person
+    // nó sẽ lấy giá trị của object window
+    //var firstName = "Anh", lastName = "Bui";
+    //function ShowFullName() {
+    //    console.log(this.firstName + " " + this.lastName);
+    //}
+    //var person = {
+    //    firstName: "John",
+    //    lastName: "Wick",
+    //    ShowFullName: function () {
+    //        console.log(this.firstName + " " + this.lastName);
+    //    }
+
+    //}
+    //person.ShowFullName();
+
+    // Apply with this
+    //var person = {
+    //    firstName: "Anh",
+    //    lastName: "Tranngoc",
+    //    showFullName: function () {
+    //        // "Ngữ cảnh"
+    //        console.log(this.firstName + " " + this.lastName);
+    //    }
+    //}
+
+    //var anotherPerson = {
+    //    firstName: "VietPhuong",
+    //    lastName: "Doan"
+    //};
+    //person.showFullName.apply(anotherPerson);
+
+
+    //var user = {
+    //    data: [
+    //        { name: "T. Woods", age: 37 },
+    //        { name: "P. Mickelson", age: 43 }
+    //    ],
+    //    clickHandler: function (event) {
+    //        // Chọn ngẫu nhiên 0 hoặc 1
+    //        var randomNum = ((Math.random() * 2 | 0) + 1) - 1;
+
+    //        // Dòng dưới đây sẽ in ra tên và tuối của một user ngẫu nhiên
+    //        // lấy từ array
+    //        console.log(this.data[randomNum].name + " " + this.data[randomNum].age);
+    //    }
+    //}
+
+    //// button được bảo bởi hàm jQuery $, nên nó trở thành một đối tượng
+    //// jQuery.  Và output sẽ la undefined bởi vì không có thuộc tính data
+    //// cho đối tượng button
+
+    //$("button").click(user.clickHandler.bind(user));
+    var user = {
+        tournament: "The Masters",
+        data: [
+            { name: "T. Woods", age: 37 },
+            { name: "P. Mickelson", age: 43 }
+        ],
+
+        clickHandler: function () {
+            // Việc sử dụng this.data ở đây không vấn đề gì, bởi vì "this"
+            // tham chiếu đến đối tượng user và data là một thuộc tính của
+            // đối tượng.
+            var pit=this
+            this.data.forEach(function (person) {
+                // Nhưng ở trong hàm vô danh này (nó được truyền cho
+                // phương thức forEach), "this" không tham chiếu đến đối
+                // tượng user nữa.  Hàm này không thể truy cập "this" của
+                // hàm bên ngoài.
+               
+                console.log("What is This referring to? " + this); //[object Window]
+                console.log(person.name + " is playing at " + this.tournament);
+                // T. Woods is playing at undefined
+                // P. Mickelson is playing at undefined
+            })
         }
-    };
-    console.log(person.myFunction());
+    }
+    user.clickHandler();
+
+
+
+
 
 </script>
 </html>
